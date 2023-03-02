@@ -21,7 +21,7 @@ if len(article_text) > 5:
             max_tokens = 3800,
             temperature = temp
         )
-        res = response["choices"][2]["text"]
+        res = response["choices"][3]["text"]
         st.info(res)
 
         st.download_button("Download result", res)
